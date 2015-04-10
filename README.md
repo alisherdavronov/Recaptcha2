@@ -3,7 +3,8 @@ ASP.NET MVC 5 widget for [google's recaptcha](https://www.google.com/recaptcha)
 
 # Usage
 
-1) Register in [google's recaptcha 2](https://www.google.com/recaptcha) and get site key and secret
+1) Register in [google's recaptcha 2](https://www.google.com/recaptcha) and get site key and secret.
+
 2) Add site key and secret into web.config:
 ```xml    
 <configuration>
@@ -13,7 +14,8 @@ ASP.NET MVC 5 widget for [google's recaptcha](https://www.google.com/recaptcha)
     ...
 ```
 
-3) Add Recaptcha2 class to your ASP.NET MVC 5 project
+3) Add Recaptcha2 class to your ASP.NET MVC 5 project.
+
 4) Add Recaptcha2 to your forms view:
 
 ```Razor
@@ -32,7 +34,7 @@ ASP.NET MVC 5 widget for [google's recaptcha](https://www.google.com/recaptcha)
 
 ```
 
-   *No need to create a field in model
+   *No need to create a property in model for captcha code.
 
 5) Add ValidateRecaptcha2 attribute to your controller's post action:
 
@@ -42,3 +44,4 @@ ASP.NET MVC 5 widget for [google's recaptcha](https://www.google.com/recaptcha)
         [ValidateRecaptcha2(ErrorMessage = @"Recaptcha is required")]
 ```
 
+Have fun.
